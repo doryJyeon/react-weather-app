@@ -8,7 +8,7 @@ import { AllDaysWrapper } from "./styles";
 const AllDays: React.FC = () => {
   const { id } = useParams();
 
-  const { days, isLoading } = useWeatherForecast(id ? `${id}` : "seoul");
+  const { days } = useWeatherForecast(id ? `${id}` : "seoul");
 
   return (
     <AllDaysWrapper>

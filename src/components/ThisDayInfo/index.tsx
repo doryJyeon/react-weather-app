@@ -16,7 +16,7 @@ const imgInfo = [
 
 const ThisDayInfo: React.FC = () => {
   const { id } = useParams();
-  const { data, isLoading } = useWeather(id ? `${id}` : "seoul");
+  const { data } = useWeather(id ? `${id}` : "seoul");
 
   // array of Categories results
   const temp = `${Math.round(data?.main.temp || 0)}°C feels like ${Math.round(

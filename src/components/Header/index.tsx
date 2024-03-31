@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeaderWrapper, Logo } from './styles'
 import { Link } from 'react-router-dom'
 import CitySelect from './CitySelect/CitySelect'
