@@ -18,9 +18,9 @@ const TempClothes = ({tempMin, tempMax}: Props) => {
       </ClothesIconWrapper>
 
       <TempCommentWrapper>
-        <p>{season}</p>
-        <p>{clothes}</p>
-        <p>{comment}</p>
+        <p className="season">{season}</p>
+        <p className="clothes">{clothes}</p>
+        <p className="comment">{comment}</p>
       </TempCommentWrapper>
     </TempClothesWrapper>
   );
