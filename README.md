@@ -13,6 +13,7 @@ https://jyeon-weather.netlify.app/
   * bad, danger 시 마스크 착용 권고
   * ![image](https://github.com/doryJyeon/react-weather-app/assets/125242321/e9545d1b-0eef-425b-8c00-3d1e3115a88b)
 * 현재 날씨 정보
-* 오늘 기온의 맞는 옷 추천
+  * +(온도, 기압, 습도, 바람)
+* 오늘 기온에 맞는 옷 추천
 * 7일간 날씨 정보
   
