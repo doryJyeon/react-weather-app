@@ -26,7 +26,7 @@ const useAirPollutionData = () => {
 
   useEffect(() => {
     if(data && !isLoading) {
-      const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${API_KEY}`;
+      const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${API_KEY}`;
       const temp = data.main.temp;
 
       const fetchData = async () => {
