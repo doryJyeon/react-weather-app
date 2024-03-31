@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import clothesData from "../data/clothes"
+import clothesData from "../components/TempClothes/data"
 
 // 기온에 맞는 옷 추천
 const useTempClothes = (min: number, max: number) => {
