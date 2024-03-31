@@ -12,7 +12,7 @@ import { HomeWrapper, ThisDayBlock } from './styles'
 
 const Home = () => {
   const { id } = useParams();
-  const { data, isLoading } = useWeather(id ? `${id}` : "seoul");
+  const { data } = useWeather(id ? `${id}` : "seoul");
   
   return (
     <HomeWrapper>
