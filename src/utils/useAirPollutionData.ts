@@ -6,8 +6,8 @@ import useWeather from './useWeather';
 
 // air icon trans
 const getAirCondition = (aqi: number) => {
-  // 1~5단계, 4단계 이후 mask로 통일함
-  const conditionArr = ["best", "good", "bad", "mask"];
+  // 1~5단계
+  const conditionArr = ["best", "good", "normal", "bad", "mask"];
   return (aqi > 3 ? conditionArr[3] : conditionArr[aqi - 1]);
 }
 

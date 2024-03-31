@@ -22,6 +22,9 @@ export const FineAirWrapper = styled(InnerContainer)`
     > span.good {
       color: forestgreen;
     }
+    > span.normal {
+      color: gold;
+    }
     > span.bad {
       color: darkorange;
     }

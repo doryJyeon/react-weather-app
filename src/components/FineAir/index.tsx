@@ -1,16 +1,6 @@
 import { AirComponent, AirComponents, FineAirWrapper } from "./styles";
 import useAirPollutionData from "../../utils/useAirPollutionData";
 
-interface Components {
-  [key:string]: number;
-}
-
-interface AirData {
-  components: Components;
-  fieAir: string;
-  temp: number
-}
-
 const FineAir = () => {
   const { airData, loading, error } = useAirPollutionData();
   const airState = airData?.fineAir || "good";
