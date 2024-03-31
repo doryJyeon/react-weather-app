@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Container } from "../../Container.styles";
 
 export const HeaderWrapper = styled(Container)`
-  margin-top: 5vh;
   font-size: 20px;
   display: flex;
   justify-content: space-between;

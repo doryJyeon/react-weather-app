@@ -7,6 +7,11 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 980px) {
+    box-sizing: border-box;
+    width: 100vw;
+  }
 `;
 
 export const ThisDayBlock = styled(Container)`
@@ -14,7 +19,10 @@ export const ThisDayBlock = styled(Container)`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-bottom: 10px;
+
+  @media (max-width: 1050px) {
+    gap: 30px;
+  }
 
   @media (max-width: 980px) {
     flex-direction: column;

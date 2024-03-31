@@ -15,8 +15,8 @@ export const ThisDayWrapper = styled.div`
   gap: 30px;
 
   @media (max-width: 980px) {
-    max-width: 350px;
-    min-height: 250px;
+    max-width: 550px;
+    width: 100%;
   }
 `;
 
@@ -47,6 +47,13 @@ export const Top = styled.div`
   img {
     width: 100%;
     height: 100%;
+    max-width: 153px;
+  }
+
+  @media (max-width: 500px) {
+    img {
+      max-width: 100px;
+    }
   }
 `;
 export const Bottom = styled.div`

@@ -37,7 +37,8 @@ export const ThisDayInfoWrapper = styled.div`
   }
 
   @media (max-width: 980px) {
-    max-width: 350px;
+    max-width: 550px;
+    width: 100%;
     height: fit-content;
     gap: 0;
     padding: 8px 16px;

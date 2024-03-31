@@ -1,22 +1,19 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styles";
+import { InnerContainer } from "../../Container.styles";
 
-export const AllDaysWrapper = styled(Container)`
-  background-color: #ffffff;
+export const AllDaysWrapper = styled(InnerContainer)`
   margin-bottom: 5vh;
-  border-radius: 20px;
-  padding: 20px;
-  min-height: 170px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   gap: 20px;
 
+  @media (max-width: 1050px) {
+    gap: 10px;
+  }
+
   @media (max-width: 980px) {
-    width: 350px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }

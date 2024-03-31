@@ -9,4 +9,5 @@ body {
   min-height: 100vh;
   background-color: transparent;
   background: linear-gradient(160deg, lemonchiffon, skyblue);
+  overflow-x: hidden;
 }
