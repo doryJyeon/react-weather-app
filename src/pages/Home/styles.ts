@@ -12,6 +12,11 @@ export const HomeWrapper = styled.div`
     box-sizing: border-box;
     width: 100vw;
   }
+
+  > p:last-of-type {
+    font-size: 0.8rem;
+    color: white;
+  }
 `;
 
 export const ThisDayBlock = styled(Container)`

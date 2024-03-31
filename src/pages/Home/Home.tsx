@@ -23,6 +23,8 @@ const Home = () => {
       </ThisDayBlock>
       {data && <TempClothes tempMin={data.main.temp_min} tempMax={data.main.temp_max}/>}
       <AllDays />
+
+      <p>icons &copy; Freepik - Flaticon</p>
     </HomeWrapper>
   )
 }
