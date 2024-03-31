@@ -1,7 +1,7 @@
-import { API_KEY } from './openWeather';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import useWeather from './useWeather';
+import { API_KEY } from '../data/weatherKey';
 
 
 // air icon trans

@@ -1,6 +1,5 @@
 import OpenWeatherMap from "openweathermap-ts";
-
-export const API_KEY = "38ed115b93a87e864e8e9d52981c3842";
+import { API_KEY } from "../data/weatherKey";
 
 const openWeather = new OpenWeatherMap({
   apiKey: API_KEY,
