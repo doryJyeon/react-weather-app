@@ -7,7 +7,7 @@ import useWeather from './useWeather';
 // air icon trans
 const getAirCondition = (aqi: number) => {
   // 1~5단계
-  const conditionArr = ["best", "good", "normal", "bad", "mask"];
+  const conditionArr = ["best", "good", "normal", "bad", "danger"];
   return (aqi > 3 ? conditionArr[3] : conditionArr[aqi - 1]);
 }
 

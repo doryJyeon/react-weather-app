@@ -28,7 +28,7 @@ export const FineAirWrapper = styled(InnerContainer)`
     > span.bad {
       color: darkorange;
     }
-    > span.mask {
+    > span.danger {
       color: red;
     }
   }
