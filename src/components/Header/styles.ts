@@ -36,6 +36,7 @@ export const SelectWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+  position: relative;
 
   .react-select-container {
     width: 200px;
@@ -59,3 +60,42 @@ export const SelectWrapper = styled.div`
     }
   }
 `;
+
+export const OpenWeatherDesc = styled.div`
+  display: none;
+  position: absolute;
+  width: auto;
+  padding: 5px 15px;
+  text-align: center;
+  background-color: #000000aa;
+  border-radius: 4px;
+  font-size: .8rem;
+  color: #fff;
+  top: 0;
+  margin-top: -36px;
+
+  &.show {
+    display: block;
+  }
+
+  // 말풍선 꼬리
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #000000aa;
+    border-left: 5px solid #000000aa;
+  }
+
+  @media (max-width: 980px) {
+    margin-right: 40px;
+  }
+`

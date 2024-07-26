@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { SelectWrapper } from "../styles";
+import { OpenWeatherDesc, SelectWrapper } from "../styles";
 
 import CreatableSelect from "react-select/creatable";
 import { CityOption, cityOptions } from "../data";
@@ -8,6 +8,7 @@ import { ActionMeta, OnChangeValue } from "react-select";
 
 const CitySelect: React.FC = () => {
   const navigate = useNavigate();
+  const [showDesc, setShowDesc] = useState("");
 
   const handleChange = (
     newValue: OnChangeValue<CityOption, false>,
@@ -18,7 +19,12 @@ const CitySelect: React.FC = () => {
 
   return (
     <SelectWrapper>
+      <OpenWeatherDesc className={showDesc}>
+        Open Weather 제공 도시만 가능합니다.
+      </OpenWeatherDesc>
       <CreatableSelect
+        onFocus={() => setShowDesc("show")}
+        onBlur={() => setShowDesc("")}
         onChange={handleChange}
         options={cityOptions}
         defaultValue={null}
