@@ -1,8 +1,13 @@
 import OpenWeatherMap from "openweathermap-ts";
-import { API_KEY } from "../data/weatherKey";
+
+const apiKey = process.env.REACT_APP_API_KEY!;
+
+if (!apiKey) {
+  throw new Error('API key is missing');
+}
 
 const openWeather = new OpenWeatherMap({
-  apiKey: API_KEY,
+  apiKey
 });
 
 openWeather.setUnits("metric");

@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import useWeather from './useWeather';
-import { API_KEY } from '../data/weatherKey';
 
 
 // air icon trans
@@ -25,8 +24,8 @@ const useAirPollutionData = () => {
   const [error, setError] = useState({});
 
   useEffect(() => {
-    if(data && !isLoading) {
-      const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${API_KEY}`;
+    if (data && !isLoading) {
+      const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${process.env.REACT_APP_API_KEY}`;
       const temp = data.main.temp;
 
       const fetchData = async () => {
@@ -38,7 +37,7 @@ const useAirPollutionData = () => {
           }
           const getData = await response.json();
           const fineAir = getAirCondition(getData.list[0].main.aqi);
-          setAirData({components: {...getData.list[0].components}, fineAir, temp});
+          setAirData({ components: { ...getData.list[0].components }, fineAir, temp });
         } catch (error: any) {
           console.log(error)
           setError(error);
