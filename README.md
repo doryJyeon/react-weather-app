@@ -18,5 +18,9 @@ Pc / Tablet / Mobile
 * 오늘 기온에 맞는 옷 추천
 * 7일간 날씨 정보
 
+#### 지역 변경
+![choice-city](https://github.com/user-attachments/assets/c0e4a68c-24cb-41b0-a663-1284b8e250da)<br />
+검색을 통해 open weather API에서 제공하는 지역의 날씨 확인이 가능합니다.
+
 ### Mobile
 ![image](https://github.com/doryJyeon/react-weather-app/assets/125242321/a5aebeae-5265-4875-adba-09bd36629050)
