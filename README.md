@@ -1,8 +1,24 @@
 # React Weather App
-[사이트 이동](https://jyeon-weather.netlify.app/)
+[구현 사이트 이동](https://jyeon-weather.netlify.app/)
 
-React18 + ts<br />
+React18 + ts  
 Pc / Tablet / Mobile
+
+## 실행 방법
+#### APIKEY 발급
+[OpenWeather](https://home.openweathermap.org/users/sign_up)에서 APIKEY 발급 후 /.env 파일에 추가합니다.
+```
+// /.env 파일
+REACT_APP_API_KEY = YOURKEY
+```
+```
+// npm install
+npm i
+npm run dev
+
+//localhost 접속
+localhost:3000
+```
 
 ## 구현 화면
 ### Web
